@@ -1,0 +1,15 @@
+{
+  "id": "chrisfilo/metaanalysis-with-neurovault-api",
+  "id_no": 2240839,
+  "title": "Metaanalysis with NeuroVault API",
+  "code_file": "Metaanalysis using single subject maps.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": []
+}
