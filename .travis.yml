@@ -2,6 +2,10 @@ language: python
 env:
   global:
     secure: DZxEN+PlxMFlSgSnPjLPdMUNE/bW0x7DSpZj0clO2+/a5ekXZNiUmgpoeQEqigBGFpKh/y0toggCv4LEjeV8a+7aRCSvSFihYy/nTVD6WqdKKta3FJMCCuEPyGWsXQLowg2u/j948YDJGDZBAUS+pNVpk19a3oX0Tw30+k+yoCRAHUVXHizLVfoMCGKgA+g03ZmAHNiFDUE7jlo5oFNXJi5qM2DJWE5mWPJC7DMsmPu7YROVqPzvSLxalYWgmb/q7zvGQe1ynSEXY7airy+7srMEW7qbpF2EAVGGsQbTnxDo6zSDaKy8T0FkUPzcL2aN1ie7Dc0muR7Pn0dbmMv+uDuS30VIKj3rjyl2B0CeRslrLX5LGYs7ckIdRCzpW7AzoiiCWWTjj2/s3WXaYwhF7gGDmx/rjrSsu0CHk43j188tdLovOb6PTRBPjUg9yRe1QP9kvCsPjjsDarBCtymLGUZioJTsFsiY2A8G5njMCb9Pq33mWIs6DUIWW0ElbrT7BQbCVVFlEcgzoUrapNGx0PeOCpEvVpQ6lSgyfGBG+CIMUyDg3lXqRbtH6iD3BJ+Ngh0TRwFzwg10TbOQni7yTXQUQM5fmr4r/HFAqz9ZYcdhdxmhRQqN52Xck1kJD1QqV8wABOt+IQC2JOlaML2ghkUDDyw4JErhscwzi3vdOK8=
-install: pip install kaggle==1.5.0
+install: 
+  - pip install kaggle==1.5.0
+  - mkdir ~/.kaggle
+  - echo \{\"username\":\"chrisfilo\",\"key\":\"$KAGGLE_KEY\"\} > ~/.kaggle/kaggle.json
+  - chmod -R go-rw ~/.kaggle
 script: kaggle kernels push -p .
 
