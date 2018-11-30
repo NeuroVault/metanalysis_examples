@@ -1,0 +1,2 @@
+language: python
+script: pip install kaggle==1.5.0
