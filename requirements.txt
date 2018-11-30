@@ -1,0 +1,5 @@
+nibabel==2.3.1
+nilearn==0.5.0
+pandas==0.23.4
+requests==2.20.1
+git+git://github.com/neurostuff/nimare.git@608516ec3034e356326dfe70df5e9ed77efd2be8#egg=nimare
